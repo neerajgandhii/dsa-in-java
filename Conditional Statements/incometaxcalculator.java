@@ -9,14 +9,18 @@ public class incometaxcalculator {
 
         if (income>=1000000){
             System.out.println("30% tax");
-            System.out.println(income * 0.3);
+            System.out.println("Income is " + (income - income * 0.3));
+            System.out.println("Tax is " + (income * 0.3));
         }
         else if (income>500000){
             System.out.println("20% tax");
-            System.out.println(income * 0.2);
+            System.out.println("Income is " + (income - income * 0.2));
+            System.out.println("Tax is " + (income * 0.2));
         }
         else{
             System.out.println("0% tax");
+            System.out.println("Income is " + income);
+            System.out.println("Tax is " + income * 0);
         }
     }
     
