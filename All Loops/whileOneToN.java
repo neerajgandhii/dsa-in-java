@@ -10,7 +10,7 @@ public class whileOneToN {
         System.out.println("The Order is");
 
         while (counter <= limit){
-            System.out.println(counter);
+            System.out.print(counter + " ");
             counter++;
         }
     }
