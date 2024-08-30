@@ -9,7 +9,7 @@ public class whileSumOfNNumbers {
         int sum = 0, counter = 0;
 
         while(counter <= range){
-            sum = sum + counter; 
+            sum += counter; 
             counter++;
         }
         System.out.println("The sum of all natural numbers upto and including " + range + " is " + sum );
