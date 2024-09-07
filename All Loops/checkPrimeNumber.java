@@ -10,6 +10,7 @@ public class checkPrimeNumber {
         for (int i = 2; i <= Math.sqrt(checkNum); i++){
             if (checkNum % i == 0){
                 value = false;
+                break;
             }
         }
         if (value == true){
