@@ -7,10 +7,10 @@ public class problemInvertedAndRotatedHalfPyramid {
         int size = sc.nextInt();
 
         for (int pattern = 1; pattern <= size; pattern++){
-            for (int blanks = 1; blanks <= size - 1; blanks++){
+            for (int blanks = 1; blanks <= size - pattern; blanks++){
                 System.out.print(" ");
             }
-            for (int stars = 1; stars <= size; stars++){
+            for (int stars = 1; stars <= pattern; stars++){
                 System.out.print("*");
             }
             System.out.println();
