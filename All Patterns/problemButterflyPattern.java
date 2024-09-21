@@ -8,9 +8,14 @@ public class problemButterflyPattern {
         int size = sc.nextInt();
 
         for (int upperLayers = 1; upperLayers <= (size / 2); upperLayers++){
-            System.out.print("*");
+            for (int upperFrontStars = 1; upperFrontStars <= size; upperFrontStars++){
+                System.out.print("*");
+            }
             for (int upperBlanks = (size / 2); upperBlanks >= 0; upperBlanks--){
                 System.out.print(" ");
+            }
+            for (int upperBackStars = 1; upperBackStars <= size; upperBackStars++){
+                System.out.print("*");
             }
             System.out.println();
         }
