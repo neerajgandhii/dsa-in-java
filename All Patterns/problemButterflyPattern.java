@@ -7,17 +7,69 @@ public class problemButterflyPattern {
         System.out.println("Select a size for your butterfly!");
         int size = sc.nextInt();
 
-        for (int upperLayers = 1; upperLayers <= (size / 2); upperLayers++){
-            for (int upperFrontStars = 1; upperFrontStars <= size; upperFrontStars++){
-                System.out.print("*");
+        if (size % 2 == 0){
+            for (int layers = 1; layers <= (size / 2) - 1; layers++){
+                for (int frontStars = 1; frontStars <= layers; frontStars++){
+                    System.out.print("*");
+                }
+                for (int blanks = (size - (layers * 2)); blanks >= 1; blanks--){
+                    System.out.print(" ");
+                }
+                for (int backStars = 1; backStars <= layers; backStars++){
+                    System.out.print("*");
+                }
+                System.out.println();
             }
-            for (int upperBlanks = (size / 2); upperBlanks >= 0; upperBlanks--){
-                System.out.print(" ");
-            }
-            for (int upperBackStars = 1; upperBackStars <= size; upperBackStars++){
+            for (int middleLayers = 1; middleLayers <= size; middleLayers++){
                 System.out.print("*");
             }
             System.out.println();
+            for (int middleLayers = 1; middleLayers <= size; middleLayers++){
+                System.out.print("*");
+            }
+            System.out.println();
+            for (int layers = (size / 2) - 1; layers >= 1; layers--){
+                for (int frontStars = 1; frontStars <= layers; frontStars++){
+                    System.out.print("*");
+                }
+                for (int blanks = (size - (layers * 2)); blanks >= 1; blanks--){
+                    System.out.print(" ");
+                }
+                for (int backStars = 1; backStars <= layers; backStars++){
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
+        }
+        else {
+            for (int layers = 1; layers <= (size / 2); layers++){
+                for (int frontStars = 1; frontStars <= layers; frontStars++){
+                    System.out.print("*");
+                }
+                for (int blanks = (size - (layers * 2)); blanks >= 1; blanks--){
+                    System.out.print(" ");
+                }
+                for (int backStars = 1; backStars <= layers; backStars++){
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
+            for (int middleLayers = 1; middleLayers <= size; middleLayers++){
+                System.out.print("*");
+            }
+            System.out.println();
+            for (int layers = (size / 2); layers >= 1; layers--){
+                for (int frontStars = 1; frontStars <= layers; frontStars++){
+                    System.out.print("*");
+                }
+                for (int blanks = (size - (layers * 2)); blanks >= 1; blanks--){
+                    System.out.print(" ");
+                }
+                for (int backStars = 1; backStars <= layers; backStars++){
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
         }
     }
 }
