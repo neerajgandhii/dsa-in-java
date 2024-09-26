@@ -17,7 +17,7 @@ public class checkCase {
             System.out.println(word + " is uppercase");
         }
         else {
-            System.out.println(word + " is a mux of lowercase & uppercase");
+            System.out.println(word + " is a mix of lowercase & uppercase");
         }
     }
 }
