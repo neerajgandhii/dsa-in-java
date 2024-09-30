@@ -8,5 +8,6 @@ public class wordsCounter {
         String line = sc.nextLine().trim();
 
         //exam time
+        // damn we got cd tom
     }
 }
