@@ -6,5 +6,7 @@ public class wordsCounter {
 
         System.out.println("Enter a phrase!");
         String line = sc.nextLine().trim();
+        
+        //where did the comments go
     }
 }
