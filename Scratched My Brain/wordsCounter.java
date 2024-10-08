@@ -7,12 +7,19 @@ public class wordsCounter {
         System.out.println("Enter a phrase!");
         String line = sc.nextLine().trim();
         
-        //where did the comments go
+        int counter = 1;
+        int index = 0;
 
-        //exam time
-        // damn we got cd tom
+        if (line.isEmpty()){
+            System.out.println("0 words!");
+            return;
+        }
 
-        //50th commit
-        //last exammmm
+        while ((index = line.indexOf(" ", index)) != -1){
+            counter++;
+            index += 1;
+        }
+
+        System.out.println(counter + " words!");
     }
 }
